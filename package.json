@@ -4,11 +4,7 @@
   "description": "前端脚手架",
   "main": "index.js",
   "bin": {
-    "zjz": "bin/zjz",
-    "zjz-add": "bin/zjz-add",
-    "zjz-delete": "bin/zjz-delete",
-    "zjz-init": "bin/zjz-init",
-    "zjz-list": "bin/zjz-list"
+    "zjz": "bin/zjz.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
