@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const program = require('commander');
-program.version(require('../package').version).usage('<command> [options]');
+
+program.version(require('../package').version);
 
 program
   .command('add')
@@ -26,3 +27,8 @@ program
   .action(() => require('../lib/command/init'));
 
 program.parse(process.argv);
+
+// 只输入zjz时，输出帮助
+if (process.argv.length === 2) {
+  program.help();
+}
